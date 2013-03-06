@@ -25,4 +25,7 @@ XSERVER = "xserver-xorg \
 # Ship kernel modules
 MACHINE_EXTRA_RRECOMMENDS = "kernel-modules"
 
+MKUBIFS_ARGS = "-m 2048 -e 129024 -c 2030"
+UBINIZE_ARGS = "-m 2048 -p 128KiB -s 512"
+
 SERIAL_CONSOLE = "115200 ttyAMA0"
